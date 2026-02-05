@@ -1,0 +1,16 @@
+services:
+  mysql:
+    image: mysql:8.1
+    container_name: meetingdb-mysqlSSSSS
+    environment:
+      MYSQL_DATABASE: meetingdb
+      MYSQL_USER: meetinguser
+      MYSQL_PASSWORD: meetingpass
+      MYSQL_ROOT_PASSWORD: rootpass
+    ports:
+      - "3306:3306"
+    volumes:
+      - meetingdb_data:/var/lib/mysql
+
+volumes:
+  meetingdb_data:
