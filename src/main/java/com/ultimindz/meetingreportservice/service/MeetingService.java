@@ -2,6 +2,7 @@ package com.ultimindz.meetingreportservice.service;
 
 import com.ultimindz.meetingreportservice.dto.CreateMeetingRequest;
 import com.ultimindz.meetingreportservice.entity.Meeting;
+import com.ultimindz.meetingreportservice.exception.NotFoundException;
 import com.ultimindz.meetingreportservice.repository.MeetingRepository;
 import org.springframework.stereotype.Service;
 
@@ -25,6 +26,6 @@ public class MeetingService {
     }
 
     public Meeting getById(Long id){
-        return meetingRepository.findById(id).orElseThrow(() -> new IllegalArgumentException("Meeting not found: " + id));
+        return meetingRepository.findById(id).orElseThrow(() -> new NotFoundException("Meeting not found: " + id));
     }
 }
