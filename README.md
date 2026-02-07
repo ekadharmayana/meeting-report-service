@@ -12,6 +12,7 @@ This project serves as a portfolio project focusing on **Java backend developmen
 - Spring Security (configurable, open dev mode)
 - Docker Compose for local development environment
 - OpenAPI / Swagger UI for API documentation
+- Paginated and filterable meetings endpoint
 ---
 
 ## 🛠 Tech Stack
@@ -96,6 +97,18 @@ After launch, you can reach us at: `http://localhost:8080/swagger-ui/index.html`
 **Retrieve a meeting**
 
 **GET**`/meeting/{id}`
+
+**List Meetings (pagignation & filters)**
+
+**GET** `/meetings`
+Query parameters:
+- `page` (default: 0)
+- `size` (default: 10)
+- `from` (ISO datetime, optional)
+- `to` (ISO datetime, optional)
+- `organizerEmail` (optional)
+
+Example: **GET** `/meetings?page=0&size=5&from=2026-02-01T00:00:00&to=2026-02-28T23:59:59`
 
 ---
 
