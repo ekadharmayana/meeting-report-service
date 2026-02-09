@@ -1,4 +1,6 @@
 # Meeting Report Service
+![CI](https://github.com/ekadharmayana/meeting-report-service/actions/workflows/ci.yml/badge.svg)
+
 
 Spring Boot backend service for managing meetings and (optionally) attendance data.  
 This is a **portfolio project** with a focus on **Java backend development**, **clean architecture**, and **production-like REST APIs**.
