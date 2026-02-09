@@ -1,18 +1,18 @@
 # Meeting Report Service
 
-Backend service for managing meetings, participants, and attendance.
-
-This project serves as a portfolio project focusing on **Java backend development**, **clean architecture**, and **enterprise technologies**.
+Spring Boot backend service for managing meetings and (optionally) attendance data.  
+This is a **portfolio project** with a focus on **Java backend development**, **clean architecture**, and **production-like REST APIs**.
 
 ## ✨ Features
-- REST API for managing meetings
-- Persistence with MySQL and JPA (Hibernate)
-- Database schema versioning with Flyway
-- DTO-based API (no entity leaks)
-- Spring Security (configurable, open dev mode)
-- Docker Compose for local development environment
-- OpenAPI / Swagger UI for API documentation
-- Paginated and filterable meetings endpoint
+- REST API to create and retrieve meetings
+- Persistence with **MySQL** and **JPA (Hibernate)**
+- Database schema migrations using **Flyway**
+- DTO-based API design (no entity leaks)
+- Centralized error handling with consistent JSON error responses
+- **Docker Compose** for local development
+- **OpenAPI / Swagger UI** for API documentation
+- **Paginated and filterable meetings endpoint**
+  (`page`, `size`, `from`, `to`, `organizerEmail`)
 ---
 
 ## 🛠 Tech Stack
@@ -29,7 +29,7 @@ This project serves as a portfolio project focusing on **Java backend developmen
 ## 🚀 Start your project locally
 
 ### 1. Prerequisites
-- Java 17 or higher
+- Java 21 or higher
 - Docker & Docker Compose
 - Maven (or Maven Wrapper)
 ---
